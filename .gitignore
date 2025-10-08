@@ -62,3 +62,4 @@ obj/
 *.err
 *.out
 ./.make
+./.cph
