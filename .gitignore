@@ -56,10 +56,11 @@ obj/
 *.pdb
 *.idb
 *.ilk
+*.prob
 
 # Logs
 *.log
 *.err
 *.out
 ./.make
-./.cph
+./.cph/**
