@@ -10,13 +10,25 @@ int main() {
   int n;
   cin >> n;
 
-  string s;
-  s.reserve(n);
-  cin >> s;
+  const int freq_len = 26;
+  vector<int> freq(freq_len, 0);
 
-  sort(s.begin(), s.end());
+  int ascii_a = int('a');
 
-  cout << s << endl;
+  for (int i = 0; i < n; i++) {
+    char temp;
+    cin >> temp;
+
+    if (temp >= 'a' && temp <= 'z') {
+      freq[temp - 'a']++;
+    }
+  }
+
+  for (int i = 0; i < freq_len; i++) {
+    cout << string(freq[i], 'a' + i);
+  }
+
+  cout << endl;
 
   return 0;
 }
