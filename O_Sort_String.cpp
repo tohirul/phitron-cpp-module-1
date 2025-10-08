@@ -13,8 +13,6 @@ int main() {
   const int freq_len = 26;
   vector<int> freq(freq_len, 0);
 
-  int ascii_a = int('a');
-
   for (int i = 0; i < n; i++) {
     char temp;
     cin >> temp;
